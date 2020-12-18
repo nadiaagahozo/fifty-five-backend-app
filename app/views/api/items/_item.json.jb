@@ -1,0 +1,13 @@
+{
+  id: item.id,
+  listing: item.listing,
+  images: item.images,
+  description: item.description,
+  ideal_trade: item.ideal_trade,
+  user_id: item.user_id,
+  city: item.city,
+  state: item.state,
+  zipcode: item.zipcode,
+  username: item.user.name
+  
+}
