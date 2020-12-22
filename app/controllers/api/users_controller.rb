@@ -25,7 +25,11 @@ class Api::UsersController < ApplicationController
     render "show.json.jb"
   end
 
-   
+  def destroy
+    user = User.find_by(id: params[:id])
+    user.destroy
+    render json: {message: "item successfully destroyed."}
+  end
 
 
 end
