@@ -27,15 +27,13 @@ class Api::ItemsController < ApplicationController
 
   def update
     @item = Item.find_by(id: params[:id])
-
-    @item.listing = params[:listing] || @item.listing
-    @item.images = params[:images] || @item.images
-    @item.description = params[:description] || @item.description
-    @item.ideal_trade = params[:ideal_trade] || @item.ideal_trade
-    @item.city = params[:city] || @item.city
-    @item.state = params[:state] || @item.state
-    @item.zipcode = params[:zipcode] || @item.zipcode
-    @item.save
+    @item.listing = params["listing"] || @item.listing
+    @item.images = params["images"] || @item.images
+    @item.description = params["description"] || @item.description
+    @item.ideal_trade = params["ideal_trade"] || @item.ideal_trade
+    @item.city = params["city"] || @item.city
+    @item.state = params["state"] || @item.state
+    @item.zipcode = params["zipcode"] || @item.zipcode
     if @item.save
       render "show.json.jb"
     else
