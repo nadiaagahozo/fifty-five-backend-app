@@ -28,5 +28,3 @@ Item.create(listing: "poster", images: "https://encrypted-tbn0.gstatic.com/image
 ", description: "mariah carey poster", ideal_trade: "whitney houston poster", user_id: 3, city: "hendersonville", state: "TN", zipcode: 37075)
 Item.create(listing: "necklace", images: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6sT2LO7n5qWB2W-n4e7IDtaZqHRZdcagG4A&usqp=CAU", description: "vivienne westwood earrings", ideal_trade: "cartier necklace", user_id: 1, city: "nashville", state: "TN", zipcode: 37027)
 
-
-# https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1iPBwRJ4uzoGpFpKhyohrLHesJnDQ9qCZsA&usqp=CAU
